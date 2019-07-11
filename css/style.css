@@ -1,0 +1,1815 @@
+* {
+  box-sizing: border-box;
+  margin:0px;
+  padding:0px;
+}
+
+::-webkit-input-placeholder {
+	color: #000000;
+	opacity: 1;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+	color: #000000;
+	opacity: 1;
+
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+	color: #000000;
+	opacity: 1;
+}
+
+:-ms-input-placeholder {  
+	color: #000000;
+	opacity: 1;
+}
+
+html {
+  position: relative;
+  top: 0;
+  left: 0;
+  max-width: 100vw;
+  min-height: 200vh;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+body {
+  background-color:#6d76a2;
+  color: #000;
+  font-size: 16px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  animation: fadein 1s;
+    -moz-animation: fadein 1s; /* Firefox */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -o-animation: fadein 1s; /* Opera */
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+nav a {
+  border-top: 1px solid #6d76a2;
+  border-bottom: 1px solid #6d76a2;
+  color:#ffffff;
+  margin: 0 10px;
+  padding: 10px 0;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+
+nav a:hover {
+  border-top: 1px solid #c1e5ec;
+  border-bottom: 1px solid #c1e5ec;
+  padding: 6px 0; 
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.0);
+  color:#fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  padding: 8px 18px;
+  transition: background-color 0.4s ease-out;
+}
+
+nav img {
+    height:50%  \9;
+    padding-top:5px;
+    width:35%;
+}
+
+nav span {
+  font-weight: 600;
+  letter-spacing: .085em;
+}
+
+nav.scroll {
+  background-color:#ffffff;
+  color: #263374;
+}
+
+nav.scroll a {
+  border-top: 1px solid #80c9d9;
+  border-bottom: 1px solid #80c9d9;
+  color:#263374;
+}
+
+body > header {
+  margin-top: 4.7em;
+}
+
+.middle {
+  background-image: url("../Images/background.jpg");
+  background-size: cover;
+  height:760px;
+  padding:3% 0%;
+  margin-top:0px;
+  overflow: hidden;
+}
+
+.boxtext {
+    background: rgba(24, 32, 72, 0.6);
+    color:#fff;
+    float:left;
+    margin-top:33%;
+    padding:1% 2% 1% 4%;
+    text-align:justify;
+    width:43%;
+}
+.boxtext h1 {
+    text-align:left;
+}
+
+#form {
+  background: rgba(0, 0, 0, 0.7);
+  color:#fff;
+  margin-top:-50px;
+  margin-left: 53%;
+  min-width: 300px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size:16px;
+  padding: 9% 2% 2% 2%;
+  width: 45%;
+  height:770px;
+}
+
+#form h1 {
+  color:#c1e5ec;
+  font-size:30px;
+  line-height:32px;
+  text-align: center;  
+}
+
+#form h2 {
+  color:#80c9d9;
+  font-size:26px;
+  line-height:26px;
+  margin-top:10px;
+  text-align: center;  
+}
+
+#form h3 {
+  color:#b8bcd1;
+  margin-top:15px;
+  text-align: center;  
+}
+
+input {
+  background-color:#ffffff;
+  color:#000000;
+  padding: 10px;
+  height:50px;
+  width: 49%;
+  font-size: 19px;
+   font-family: 'Barlow', sans-serif;
+  border: 1px solid #aaaaaa;
+}
+
+input:required {
+    box-shadow:none;
+}
+
+input[name='Email'] {
+    width:49%;
+}
+
+select {
+  background-color:#ffffff;
+  color:#000000;
+  padding: 10px;
+  width: 30%;
+  font-size: 17px;
+  font-family: 'Barlow', sans-serif;
+  border: 1px solid #aaaaaa;
+  margin-top:6px;
+}
+
+input[type="radio"] {
+    margin-top:10px;
+    height:13px;
+    width:5%;
+}
+
+select[id="_State"] {
+    font-size: 19px;
+    height:50px;
+    margin-top:-1px;
+    padding: 9px;
+    width:49%;
+}
+
+#form p{
+    text-align:justify;
+}
+
+#form p[class="submittext"]{
+    font-size:15px;
+}
+
+#form a:link {
+    border-top: none;
+    border-bottom: none;
+    color:#b8bcd1;
+    padding: 0px 0px;
+    margin: 0px 0px;
+    text-decoration: underline;
+    transition: none;
+}
+
+#form a:hover {
+    border-top: none;
+    border-bottom: none;
+    color:#80c9d9;
+    padding: 0px 0px;
+    margin: 0px 0px;
+    text-decoration: underline;
+    transition: none;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+select.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+button {
+  background-color: #f8931c;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#prevBtn {
+  background-color: #6d76a2;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #6d76a2;
+}
+
+.about {
+    background-color:#fff;
+    padding: 3% 10% 3% 10%;
+}
+
+.about h1 {
+    background: -webkit-linear-gradient(#b8bcd1, #263374);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+  text-align:center;
+}
+
+.how {
+     background-image: url("../Images/background3.jpg");
+  background-size: cover;
+   background-color:#fff;
+   background-size: cover;
+   color:#000;
+   padding: 3% 61% 4% 3%;
+}
+
+.how img {
+    height:20%;
+    width:20%;
+}
+
+.how h1 {
+    color:#696969;
+    font-size:40px;
+}
+
+.how h2 {
+    color:#191970;
+    margin-top:10px;
+}
+
+.how h3 {
+    color:#4682B4;
+    margin-top:10px;
+}
+
+.how p {
+    color:#000;
+    font-family: 'Pavanam', sans-serif;
+    font-size:19px;
+    margin-top:11px;
+    padding-bottom:13px;
+    text-align:justify;
+}
+
+.signup {
+    background-image: url("../Images/background2.jpg");
+    background-size: cover;
+    color:#ffffff;
+    padding:3% 30% 3% 30%;
+    text-align:center;
+}
+
+.signup h2 {
+    padding-bottom:45px;
+}
+
+.signup a:link, a:visited {
+    background-color: #FF8C00;
+    border-top: none;
+    border-bottom: none;
+    color:#ffffff;
+    padding: 15px 25px;
+    margin: 0px 0px;
+    text-decoration: none;
+    transition: none;
+}
+
+.signup a:hover {
+    background-color: #FFA500;
+    border-top: none;
+    border-bottom: none;
+    color:#ffffff;
+    padding: 15px 25px;
+    margin: 0px 0px;
+    text-decoration:none;
+    transition: none;
+}
+
+.types {
+  background:#f6f6f6;
+  font-size:18px;
+    padding: 4% 20% 4% 20%;
+}
+
+.types h1 {
+    border-bottom: 1px solid #191970;
+    color:#80c9d9;
+    font-size:38px;
+    padding-bottom:12px;
+    text-align:center;
+}
+
+.types h2 {
+    color:#191970;
+    margin-top:16px;
+}
+
+.types p {
+    color:000000;
+    font-family: 'Pavanam', sans-serif;
+    margin-top:14px;
+    text-align:justify;
+}
+
+.footer {
+    color:#fff;
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size:12px;
+    padding: 3% 20% 3% 20%;
+}
+
+.footer p {
+    margin-top:20px;
+    text-align:justify;
+}
+
+.footer a:link {
+    border-top: none;
+    border-bottom: none;
+    color:#b8bcd1;
+    padding: 0px 0px;
+    margin: 0px 0px;
+    text-decoration: none;
+    transition: none;
+}
+
+.footer a:hover {
+    border-top: none;
+    border-bottom: none;
+    color:#b8bcd1;
+    padding: 0px 0px;
+    margin: 0px 0px;
+    text-decoration:none;
+    transition: none;
+}
+
+/*******************************3. Media Queries - Desktop*******************************/
+@media only screen and (min-width: 1400px) and (max-width: 1500px) {
+    
+    #form h2 {
+  font-size:24px;
+  line-height:24px;
+}
+ 
+    .how {
+    background-image: url("../Images/background3.jpg");
+   background-size: cover;
+   background-color:#fff;
+   background-size: cover;
+   color:#000;
+   padding: 3% 58% 4% 3%;
+}
+
+.signup {
+    background-image: url("../Images/background2.jpg");
+    background-size: cover;
+    color:#ffffff;
+    padding:3% 25% 3% 25%;
+    text-align:center;
+}
+
+}
+
+/*******************************3. Media Queries - Desktop*******************************/
+@media only screen and (min-width: 1300px) and (max-width: 1400px) {
+    
+    .boxtext {
+    margin-top:43%;
+    padding:1% 2% 1% 4%;
+    width:40%;
+}
+    
+      #form h1 {
+  font-size:28px;
+  line-height:28px;
+}
+    
+    #form h2 {
+  font-size:23px;
+  line-height:23px;
+}
+
+.about {
+    background-color:#fff;
+    padding: 3% 5% 3% 5%;
+}
+ 
+    .how {
+    background-image: url("../Images/background3.jpg");
+   background-size: cover;
+   background-color:#fff;
+   background-size: cover;
+   color:#000;
+   padding: 3% 55% 4% 3%;
+}
+
+.signup {
+    background-image: url("../Images/background2.jpg");
+    background-size: cover;
+    color:#ffffff;
+    padding:3% 25% 3% 25%;
+    text-align:center;
+}
+
+}
+
+/*******************************3. Media Queries - Desktop*******************************/
+@media only screen and (min-width: 1200px) and (max-width: 1300px) {
+    
+    nav {
+  height: 80px;
+}
+    nav img {
+    height:55%  \9;
+    padding-top:5px;
+    width:40%;
+}
+    
+.middle {
+  background-image: url("../Images/background.jpg");
+  background-size: cover;
+  height:740px;
+  padding:3% 0%;
+  margin-top:0px;
+  overflow: hidden;
+}
+    
+    .boxtext {
+    margin-top:43%;
+    padding:1% 2% 1% 2%;
+    width:40%;
+}
+
+#form {
+  background: rgba(0, 0, 0, 0.7);
+  color:#fff;
+  margin-top:-50px;
+  margin-left: 53%;
+  min-width: 300px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size:16px;
+  padding: 9% 2% 2% 2%;
+  width: 48%;
+  height:750px;
+}
+    
+      #form h1 {
+  font-size:27px;
+  line-height:27px;
+}
+    
+    #form h2 {
+  font-size:22px;
+  line-height:22px;
+}
+
+.about {
+    background-color:#fff;
+    padding: 3% 5% 3% 5%;
+}
+ 
+    .how {
+    background-image: url("../Images/background3.jpg");
+   background-size: cover;
+   background-color:#fff;
+   background-size: cover;
+   color:#000;
+   padding: 3% 53% 4% 3%;
+}
+
+.signup {
+    background-image: url("../Images/background2.jpg");
+    background-size: cover;
+    color:#ffffff;
+    padding:3% 25% 3% 25%;
+    text-align:center;
+}
+
+}
+
+/*******************************3. Media Queries - Desktop*******************************/
+@media only screen and (min-width: 1100px) and (max-width: 1200px) {
+    
+    nav {
+  height: 65px;
+}
+    nav img {
+    height:60%  \9;
+    padding-top:0px;
+    width:45%;
+}
+
+nav a {
+  margin: 0 30px;
+}
+    
+.middle {
+  background-image: url("../Images/background.jpg");
+  background-size: cover;
+  height:730px;
+  padding:3% 0%;
+  margin-top:0px;
+  overflow: hidden;
+}
+    
+    .boxtext {
+    margin-top:43%;
+    padding:1% 2% 1% 2%;
+    width:42%;
+}
+
+#form {
+  background: rgba(0, 0, 0, 0.7);
+  color:#fff;
+  margin-top:-50px;
+  margin-left: 50%;
+  min-width: 300px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size:16px;
+  padding: 9% 2% 2% 2%;
+  width: 50%;
+  height:750px;
+}
+    
+      #form h1 {
+  font-size:26px;
+  line-height:26px;
+}
+    
+    #form h2 {
+  font-size:22px;
+  line-height:22px;
+}
+
+#form h3 {
+    font-size: 18px;
+    margin-top:10px;
+}
+
+.about {
+    background-color:#fff;
+    padding: 3% 1% 3% 1%;
+}
+
+.about h1{
+    font-size:35px;
+}
+ 
+    .how {
+    background-image: url("../Images/background3.jpg");
+   background-size: cover;
+   background-color:#fff;
+   background-size: cover;
+   color:#000;
+   padding: 2% 50% 4% 3%;
+}
+
+.how h1 {
+    font-size: 32px;
+}
+.how h2 {
+    font-size: 24px;
+}
+
+.how h3 {
+    font-size: 20px;
+}
+
+.how p {
+    font-size:16px;
+}
+
+.signup {
+    background-image: url("../Images/background2.jpg");
+    background-size: cover;
+    color:#ffffff;
+    padding:3% 20% 3% 20%;
+    text-align:center;
+}
+
+.types {
+  font-size:16px;
+    padding: 4% 10% 4% 10%;
+}
+
+.types h1 {
+    font-size:30px;
+}
+
+.types h2 {
+    font-size:25px;
+}
+
+.footer {
+    padding: 3% 13% 3% 13%;
+}
+
+}
+
+/*******************************3. Media Queries - Tablet*******************************/
+@media only screen and (min-width: 1000px) and (max-width: 1100px) {
+    
+    body {
+        background-color:#000000;
+    }
+    
+    nav {
+  height: 80px;
+}
+    nav img {
+    height:75%  \9;
+    padding-top:0px;
+    width:60%;
+}
+
+nav a {
+   margin-right:30px;
+}
+    
+.middle {
+  background-image:none;
+  height:755px;
+  padding:3% 0%;
+  margin-top:0px;
+  overflow: hidden;
+}
+    
+    .boxtext {
+    background-color:#6d76a2;
+    font-size: 16px;
+    margin-top:0%;
+    padding:1% 2% 1% 2%;
+    width:100%;
+}
+
+#form {
+  background-color:#000000;
+  color:#fff;
+  margin-top:50px;
+  margin-left: 0%;
+  min-width: 300px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size:18px;
+  padding: 10% 2% 2% 2%;
+  width: 100%;
+  height:745px;
+}
+    
+      #form h1 {
+  font-size:26px;
+  line-height:26px;
+}
+    
+    #form h2 {
+  font-size:22px;
+  line-height:22px;
+}
+
+#form h3 {
+    font-size: 18px;
+    margin-top:10px;
+}
+
+.about {
+    background-color:#fff;
+    padding: 3% 1% 3% 1%;
+}
+
+.about h1{
+    font-size:30px;
+}
+ 
+    .how {
+    background-image: url("../Images/background3.jpg");
+   background-size: cover;
+   background-color:#fff;
+   background-size: cover;
+   color:#000;
+   padding: 2% 50% 4% 3%;
+}
+
+.how h1 {
+    font-size: 26px;
+}
+.how h2 {
+    font-size: 20px;
+}
+
+.how h3 {
+    font-size: 17px;
+}
+
+.how p {
+    font-size:16px;
+}
+
+.signup {
+    background-image: url("../Images/background2.jpg");
+    background-size: cover;
+    color:#ffffff;
+    padding:3% 10% 3% 10%;
+    text-align:center;
+}
+
+.types {
+  font-size:16px;
+    padding: 4% 10% 4% 10%;
+}
+
+.types h1 {
+    font-size:30px;
+}
+
+.types h2 {
+    font-size:25px;
+}
+
+.footer {
+    background-color:#6d76a2;
+    padding: 3% 13% 3% 13%;
+}
+
+}
+
+/*******************************3. Media Queries - Phone*******************************/
+@media only screen and (min-width: 900px) and (max-width: 1000px) {
+    
+    body {
+        background-color:#000000;
+    }
+    
+    nav {
+  height: 90px;
+}
+    nav img {
+    height:75%  \9;
+    margin-top:-20px;
+    margin-left:18%;
+    width:60%;
+}
+
+nav a {
+    display:none;
+}
+    
+.middle {
+  background-image:none;
+  height:780px;
+  padding:3% 0%;
+  margin-top:0px;
+  overflow: hidden;
+}
+    
+    .boxtext {
+    background-color:#6d76a2;
+    margin-top:2%;
+    padding:1% 2% 1% 2%;
+    width:100%;
+}
+
+#form {
+  background-color:#000000;
+  color:#fff;
+  margin-top:50px;
+  margin-left: 0%;
+  min-width: 300px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size:18px;
+  padding: 13% 2% 2% 2%;
+  width: 100%;
+  height:780px;
+}
+    
+      #form h1 {
+  font-size:26px;
+  line-height:26px;
+}
+    
+    #form h2 {
+  font-size:22px;
+  line-height:22px;
+}
+
+#form h3 {
+    font-size: 18px;
+    margin-top:10px;
+}
+
+.about {
+    background-color:#fff;
+    padding: 3% 1% 3% 1%;
+}
+
+.about h1{
+    font-size:30px;
+}
+ 
+    .how {
+    background-image: url("../Images/background3.jpg");
+   background-size: cover;
+   background-color:#fff;
+   background-size: cover;
+   color:#000;
+   padding: 2% 50% 4% 3%;
+}
+
+.how h1 {
+    font-size: 26px;
+}
+.how h2 {
+    font-size: 20px;
+}
+
+.how h3 {
+    font-size: 17px;
+}
+
+.how p {
+    font-size:16px;
+}
+
+.signup {
+    background-image: url("../Images/background2.jpg");
+    background-size: cover;
+    color:#ffffff;
+    padding:3% 6% 3%  6%;
+    text-align:center;
+}
+
+.types {
+  font-size:16px;
+    padding: 4% 5% 4% 5%;
+}
+
+.types h1 {
+    font-size:30px;
+}
+
+.types h2 {
+    font-size:25px;
+}
+
+.footer {
+    background-color:#6d76a2;
+    padding: 3% 10% 3% 10%;
+}
+
+}
+
+/*******************************3. Media Queries - Phone*******************************/
+@media only screen and (min-width: 800px) and (max-width: 900px) {
+    
+    body {
+        background-color:#000000;
+    }
+    
+    nav {
+  height: 110px;
+}
+    nav img {
+    height:100%  \9;
+    margin-top:-30px;
+    width:100%;
+}
+
+nav a {
+   display:none;
+}
+    
+.middle {
+  background-image:none;
+  height:800px;
+  padding:3% 0%;
+  margin-top:0px;
+  overflow: hidden;
+}
+    
+    .boxtext {
+    background-color:#6d76a2;
+    margin-top:6%;
+    padding:1% 2% 1% 2%;
+    width:100%;
+}
+
+#form {
+  background-color:#000000;
+  color:#fff;
+  margin-top:50px;
+  margin-left: 0%;
+  min-width: 300px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size:18px;
+  padding: 19% 2% 2% 2%;
+  width: 100%;
+  height:800px;
+}
+    
+      #form h1 {
+  font-size:26px;
+  line-height:26px;
+}
+    
+    #form h2 {
+  font-size:22px;
+  line-height:22px;
+}
+
+#form h3 {
+    font-size: 18px;
+    margin-top:10px;
+}
+
+.about {
+    background-color:#fff;
+    padding: 3% 1% 3% 1%;
+}
+
+.about h1{
+    font-size:25px;
+}
+ 
+    .how {
+   background-image:none;
+   background-color:#ffffff;
+   color:#000000;
+   padding: 2% 4% 4% 3%;
+}
+
+.how h1 {
+    font-size: 26px;
+}
+.how h2 {
+    font-size: 22px;
+}
+
+.how h3 {
+    font-size: 19px;
+}
+
+.how p {
+    font-size:17px;
+}
+
+.signup {
+    display:none;
+}
+
+.types {
+   display:none;
+}
+
+.footer {
+    background-color:#6d76a2;
+    padding: 3% 5% 3% 5%;
+}
+
+}
+
+/*******************************3. Media Queries - Phone*******************************/
+@media only screen and (min-width: 700px) and (max-width: 800px) {
+    
+    body {
+        background-color:#000000;
+    }
+    
+    nav {
+  height: 100px;
+}
+    nav img {
+    height:100%  \9;
+    margin-top:-23px;
+    width:100%;
+}
+
+nav a {
+    display:none;
+}
+    
+.middle {
+  background-image:none;
+  height:820px;
+  padding:3% 0%;
+  margin-top:0px;
+  overflow: hidden;
+}
+    
+    .boxtext {
+    background-color:#6d76a2;
+    margin-top:7%;
+    padding:1% 2% 1% 2%;
+    width:100%;
+}
+
+#form {
+  background-color:#000000;
+  color:#fff;
+  margin-top:50px;
+  margin-left: 0%;
+  min-width: 300px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size:18px;
+  padding: 21% 2% 2% 2%;
+  width: 100%;
+  height:820px;
+}
+    
+      #form h1 {
+  font-size:26px;
+  line-height:26px;
+}
+    
+    #form h2 {
+  font-size:22px;
+  line-height:22px;
+}
+
+#form h3 {
+    font-size: 18px;
+    margin-top:10px;
+}
+
+.about {
+    background-color:#fff;
+    padding: 3% 1% 3% 1%;
+}
+
+.about h1{
+    font-size:25px;
+}
+ 
+    .how {
+   background-image:none;
+   background-color:#ffffff;
+   color:#000000;
+   padding: 2% 4% 4% 3%;
+}
+
+.how h1 {
+    font-size: 26px;
+}
+.how h2 {
+    font-size: 22px;
+}
+
+.how h3 {
+    font-size: 19px;
+}
+
+.how p {
+    font-size:17px;
+}
+
+.signup {
+    display:none;
+}
+
+.types {
+   display:none;
+}
+
+.footer {
+    background-color:#6d76a2;
+    padding: 3% 3% 3% 3%;
+}
+
+}
+
+/*******************************3. Media Queries - Phone*******************************/
+@media only screen and (min-width: 600px) and (max-width: 700px) {
+    
+    body {
+        background-color:#000000;
+    }
+    
+    nav {
+  height: 100px;
+}
+    nav img {
+    height:100%  \9;
+    padding-top:0px;
+    margin-left: 0px;
+    margin-top:-20px;
+    width:100%;
+}
+
+nav a {
+    display:none;
+}
+    
+.middle {
+  background-image:none;
+  height:890px;
+  padding:3% 0%;
+  margin-top:0px;
+  overflow: hidden;
+}
+    
+.boxtext {
+background-color:#6d76a2;
+margin-top:5%;
+padding:1% 2% 1% 2%;
+width:100%;
+}
+
+.boxtext h1 {
+    font-size:19px
+}
+
+.boxtext p {
+    font-size:15px
+}
+
+#form {
+  background-color:#000000;
+  color:#ffffff;
+  margin-top:50px;
+  margin-left: 0%;
+  min-width: 300px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size:18px;
+  padding: 19% 2% 2% 2%;
+  width: 100%;
+  height:890px;
+}
+    
+#form h1 {
+  font-size:26px;
+  line-height:26px;
+}
+    
+#form h2 {
+  font-size:22px;
+  line-height:22px;
+}
+
+#form h3 {
+    font-size: 18px;
+    margin-top:10px;
+    padding-bottom:5px;
+}
+
+tr {
+    width:100%;
+    display:block;
+}
+
+td {
+    display:table-row;
+    background:none;
+}
+
+input {
+  height:50px;
+  margin-top:-13px;
+  width: 100%;
+}
+
+select {
+  background-color:#ffffff;
+  height:50px;
+}
+
+input[name='Email'] {
+    width:100%;
+}
+
+select[name='_State'] {
+    margin-top:-13px;
+    width:100%;
+}
+
+.about {
+    background-color:#fff;
+    padding: 3% 1% 3% 1%;
+}
+
+.about h1{
+    font-size:21px;
+}
+ 
+    .how {
+   background-image:none;
+   background-color:#ffffff;
+   color:#000000;
+   padding: 1% 4% 4% 3%;
+}
+
+.how h1 {
+    font-size: 23px;
+}
+.how h2 {
+    font-size: 21px;
+}
+
+.how h3 {
+    font-size: 19px;
+}
+
+.how p {
+    font-size:17px;
+}
+
+.signup {
+    display:none;
+}
+
+.types {
+   display:none;
+}
+
+.footer {
+    background-color:#6d76a2;
+    padding: 3% 1% 3% 1%;
+}
+
+.footer a {
+    font-size:12px;
+    line-height:19px;
+}
+
+}
+
+/*******************************3. Media Queries - Phone*******************************/
+@media only screen and (min-width: 500px) and (max-width: 600px) {
+    
+    body {
+        background-color:#000000;
+    }
+    
+    nav {
+  height: 90px;
+}
+    nav img {
+    height:100%  \9;
+    margin-top:-20px;
+    margin-left: 0px;
+    width:100%;
+}
+
+nav a {
+    display:none;
+}
+    
+.middle {
+  background-image:none;
+  height:1030px;
+  padding:3% 0%;
+  margin-top:0px;
+  overflow: hidden;
+}
+    
+    .boxtext {
+    background-color:#6d76a2;
+    margin-top:5%;
+    padding:1% 2% 1% 2%;
+    width:100%;
+}
+
+.boxtext h1 {
+    font-size:19px
+}
+
+.boxtext p {
+    font-size:15px
+}
+
+#form {
+  background-color:#000000;
+  color:#fff;
+  margin-top:50px;
+  margin-left: 0%;
+  min-width: 300px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size:18px;
+  padding: 25% 2% 2% 2%;
+  width: 100%;
+  height:1030px;
+}
+    
+      #form h1 {
+  font-size:26px;
+  line-height:27px;
+}
+    
+    #form h2 {
+  font-size:23px;
+  line-height:25px;
+}
+
+#form h3 {
+    font-size: 20px;
+    margin-top:10px;
+}
+
+tr {
+    width:100%;
+    display:block;
+}
+
+td {
+    display:table-row;
+    background:none;
+}
+
+input {
+  height:50px;
+  margin-top:-8px;
+  width: 100%;
+}
+
+select {
+  background-color:#ffffff;
+  height:50px;
+}
+
+input[name='Email'] {
+    width:100%;
+}
+
+select[name='_State'] {
+    margin-top:-8px;
+    width:100%;
+}
+
+.about {
+    background-color:#fff;
+    padding: 3% 1% 3% 1%;
+}
+
+.about h1{
+    font-size:21px;
+}
+ 
+    .how {
+   background-image:none;
+   background-color:#ffffff;
+   color:#000000;
+   padding: 1% 4% 4% 3%;
+}
+
+.how h1 {
+    font-size: 23px;
+}
+.how h2 {
+    font-size: 21px;
+}
+
+.how h3 {
+    font-size: 19px;
+}
+
+.how p {
+    font-size:17px;
+}
+
+.signup {
+    display:none;
+}
+
+.types {
+   display:none;
+}
+
+.footer {
+    background-color:#6d76a2;
+    padding: 3% 1% 3% 1%;
+}
+
+.footer a {
+    font-size:12px;
+    line-height:19px;
+}
+
+}
+
+/*******************************3. Media Queries - Phone*******************************/
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+    
+    body {
+        background-color:#000000;
+    }
+    
+    nav {
+  height: 80px;
+}
+    nav img {
+    height:100%  \9;
+    margin-top:-10px;
+    margin-left: 0px;
+    width:100%;
+}
+
+nav a {
+    display:none;
+}
+    
+.middle {
+  background-image:none;
+  height:1050px;
+  padding:3% 0%;
+  margin-top:0px;
+  overflow: hidden;
+}
+    
+    .boxtext {
+    background-color:#6d76a2;
+    margin-top:3%;
+    padding:1% 2% 1% 2%;
+    width:100%;
+}
+
+.boxtext h1 {
+    font-size:19px;
+    text-align: center;
+}
+
+.boxtext p {
+    font-size:14px
+}
+
+#form {
+  background-color:#000000;
+  color:#fff;
+  margin-top:50px;
+  margin-left: 0%;
+  min-width: 300px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size:18px;
+  padding: 31% 2% 2% 2%;
+  width: 100%;
+  height:1050px;
+}
+    
+      #form h1 {
+  font-size:26px;
+  line-height:27px;
+}
+    
+    #form h2 {
+  font-size:23px;
+  line-height:25px;
+}
+
+#form h3 {
+    font-size: 20px;
+    margin-top:10px;
+    padding-bottom:5px;
+}
+
+tr {
+    width:100%;
+    display:block;
+}
+
+td {
+    display:table-row;
+    background:none;
+}
+
+input {
+  height:50px;
+  margin-top:-8px;
+  width: 100%;
+}
+
+select {
+  background-color:#ffffff;
+  height:50px;
+}
+
+input[name='Email'] {
+    width:100%;
+}
+
+select[name='_State'] {
+    margin-top:-8px;
+    width:100%;
+}
+
+.about {
+    background-color:#fff;
+    padding: 3% 1% 3% 1%;
+}
+
+.about h1{
+    font-size:21px;
+}
+ 
+    .how {
+   background-image:none;
+   background-color:#ffffff;
+   color:#000000;
+   padding: 1% 4% 4% 3%;
+}
+
+.how h1 {
+    font-size: 23px;
+}
+.how h2 {
+    font-size: 21px;
+}
+
+.how h3 {
+    font-size: 19px;
+}
+
+.how p {
+    font-size:17px;
+}
+
+.signup {
+    display:none;
+}
+
+.types {
+   display:none;
+}
+
+.footer {
+    background-color:#6d76a2;
+    padding: 3% 1% 3% 1%;
+}
+
+.footer a {
+    font-size:12px;
+    line-height:19px;
+}
+
+}
+
+/*******************************3. Media Queries - Phone*******************************/
+@media only screen and (min-width: 300px) and (max-width: 400px) {
+    
+    body {
+        background-color:#000000;
+    }
+    
+    nav {
+  height: 70px;
+}
+    nav img {
+    height:100%  \9;
+    margin-top:-10px;
+    margin-left: 0px;
+    width:100%;
+}
+
+nav a {
+    display:none;
+}
+    
+.middle {
+  background-image:none;
+  height:1050px;
+  padding:3% 0%;
+  margin-top:0px;
+  overflow: hidden;
+}
+    
+    .boxtext {
+    background-color:#6d76a2;
+    margin-top:5%;
+    padding:2% 2% 2% 2%;
+    width:100%;
+}
+
+.boxtext h1 {
+    font-size:19px;
+    text-align: center;
+}
+
+.boxtext p {
+    font-size:14px
+}
+
+#form {
+  background-color:#000000;
+  color:#ffffff;
+  margin-top:50px;
+  margin-left: 0%;
+  min-width: 300px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size:18px;
+  padding: 37% 2% 2% 2%;
+  width: 100%;
+  height:1050px;
+}
+    
+      #form h1 {
+  font-size:25px;
+  line-height:26px;
+}
+    
+    #form h2 {
+  font-size:22px;
+  line-height:24px;
+}
+
+#form h3 {
+    font-size: 19px;
+    margin-top:10px;
+    padding-bottom:9px;
+}
+
+p[class="submittext"]{
+    line-height:15px;
+}
+
+tr {
+    width:100%;
+    display:block;
+}
+
+td {
+    display:table-row;
+    background:none;
+}
+
+input {
+  height:50px;
+  margin-top:-10px;
+  width: 100%;
+}
+
+select {
+  background-color:#ffffff;
+  height:50px;
+}
+
+input:required {
+    box-shadow:none;
+}
+
+input[name='Email'] {
+    width:100%;
+}
+
+select[name='_State'] {
+    margin-top:-10px;
+    width:100%;
+}
+
+.about {
+    background-color:#fff;
+    padding: 3% 1% 3% 1%;
+}
+
+.about h1{
+    font-size:21px;
+}
+ 
+    .how {
+   background-image:none;
+   background-color:#ffffff;
+   color:#000000;
+   padding: 1% 4% 4% 3%;
+}
+
+.how h1 {
+    font-size: 23px;
+}
+.how h2 {
+    font-size: 21px;
+}
+
+.how h3 {
+    font-size: 19px;
+}
+
+.how p {
+    font-size:17px;
+}
+
+.signup {
+    display:none;
+}
+
+.types {
+   display:none;
+}
+
+.footer {
+    background-color:#6d76a2;
+    padding: 3% 1% 3% 1%;
+}
+
+.footer a {
+    font-size:12px;
+    line-height:19px;
+}
+
+}
